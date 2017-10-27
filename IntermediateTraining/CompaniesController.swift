@@ -109,7 +109,7 @@ class CompaniesController: UITableViewController, CreateCompanyControllerDelegat
         
         fetchCompanies()
         
-//        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "TEST ADD", style: .plain, target: self, action: #selector(addCompany))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Reset", style: .plain, target: self, action: #selector(handleReset))
         
         view.backgroundColor = .white
         
@@ -123,6 +123,58 @@ class CompaniesController: UITableViewController, CreateCompanyControllerDelegat
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "plus").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleAddCompany))
+    }
+    
+    @objc private func handleReset() {
+        print("Attempting to delete all core data objects")
+        
+        let context = CoreDataManager.shared.persistentContainer.viewContext
+        
+//        companies.forEach { (company) in
+//            context.delete(company)
+//        }
+        
+        let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: Company.fetchRequest())
+        
+        do {
+            try context.execute(batchDeleteRequest)
+            
+            // upon deletion from core data succeeded
+            
+            var indexPathsToRemove = [IndexPath]()
+            
+            for (index, _) in companies.enumerated() {
+                let indexPath = IndexPath(row: index, section: 0)
+                indexPathsToRemove.append(indexPath)
+            }
+            companies.removeAll()
+            tableView.deleteRows(at: indexPathsToRemove, with: .left)
+            
+//            companies.forEach({ (company) in
+//                companies.index(of: <#T##Company#>)
+//                // but this loop doesn't provide us with the row number
+//            })
+            
+//            companies.removeAll()
+//            tableView.reloadData()
+            
+        } catch let delErr {
+            print("Failed to delete objects from Core Data:", delErr)
+        }
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let label = UILabel()
+        label.text = "No companies available..."
+        label.textColor = .white
+        label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 16)
+        return label
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return companies.count == 0 ? 150 : 0
     }
     
     @objc func handleAddCompany() {
