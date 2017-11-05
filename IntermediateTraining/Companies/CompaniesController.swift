@@ -39,7 +39,7 @@ class CompaniesController: UITableViewController {
         
         let context = CoreDataManager.shared.persistentContainer.viewContext
         
-        let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: Employee.fetchRequest())
+        let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: Company.fetchRequest())
         
         do {
             try context.execute(batchDeleteRequest)
