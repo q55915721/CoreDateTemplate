@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C717757B1FAE96D100971552 /* EmployeeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C717757A1FAE96D100971552 /* EmployeeType.swift */; };
 		C71775C11FB3C95C00971552 /* CompaniesAutoUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71775C01FB3C95C00971552 /* CompaniesAutoUpdateController.swift */; };
+		C71775E51FB52E3C00971552 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71775E41FB52E3C00971552 /* Service.swift */; };
 		C720C0B31F9BE1B3006195A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720C0B21F9BE1B3006195A0 /* AppDelegate.swift */; };
 		C720C0B51F9BE1B3006195A0 /* CompaniesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720C0B41F9BE1B3006195A0 /* CompaniesController.swift */; };
 		C720C0B81F9BE1B3006195A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C720C0B61F9BE1B3006195A0 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		C717757A1FAE96D100971552 /* EmployeeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeType.swift; sourceTree = "<group>"; };
 		C71775C01FB3C95C00971552 /* CompaniesAutoUpdateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesAutoUpdateController.swift; sourceTree = "<group>"; };
+		C71775E41FB52E3C00971552 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		C720C0AF1F9BE1B3006195A0 /* IntermediateTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntermediateTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C720C0B21F9BE1B3006195A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C720C0B41F9BE1B3006195A0 /* CompaniesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				C72CADD61FA3CFAD006F2E12 /* CompaniesController+UITableView.swift */,
 				C7C3C0761F9E9DE8007DD439 /* CreateCompanyController.swift */,
 				C71775C01FB3C95C00971552 /* CompaniesAutoUpdateController.swift */,
+				C71775E41FB52E3C00971552 /* Service.swift */,
 			);
 			path = Companies;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				C72CADD71FA3CFAD006F2E12 /* CompaniesController+UITableView.swift in Sources */,
 				C717757B1FAE96D100971552 /* EmployeeType.swift in Sources */,
 				C72CADF11FA529A1006F2E12 /* CreateEmployeeController.swift in Sources */,
+				C71775E51FB52E3C00971552 /* Service.swift in Sources */,
 				C72CADE41FA522F1006F2E12 /* EmployeesController.swift in Sources */,
 				C720C0B31F9BE1B3006195A0 /* AppDelegate.swift in Sources */,
 				C71775C11FB3C95C00971552 /* CompaniesAutoUpdateController.swift in Sources */,
