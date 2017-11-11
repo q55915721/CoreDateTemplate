@@ -21,6 +21,8 @@
 		C72CADE41FA522F1006F2E12 /* EmployeesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CADE31FA522F1006F2E12 /* EmployeesController.swift */; };
 		C72CADEF1FA528C6006F2E12 /* UIViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CADEE1FA528C6006F2E12 /* UIViewController+Helpers.swift */; };
 		C72CADF11FA529A1006F2E12 /* CreateEmployeeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CADF01FA529A1006F2E12 /* CreateEmployeeController.swift */; };
+		C7367AAF1FB6CAFA00A18CAE /* Modelv1.1_2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = C7367AAE1FB6CAFA00A18CAE /* Modelv1.1_2.xcmappingmodel */; };
+		C7367AB11FB6CB8800A18CAE /* CustomMigrationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7367AB01FB6CB8800A18CAE /* CustomMigrationPolicy.swift */; };
 		C74388ED1F9E999000EF9F46 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74388EC1F9E999000EF9F46 /* Company.swift */; };
 		C78EE8BE1F9C45A400446BDD /* UIColor+theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78EE8BD1F9C45A400446BDD /* UIColor+theme.swift */; };
 		C7C3C0771F9E9DE8007DD439 /* CreateCompanyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C3C0761F9E9DE8007DD439 /* CreateCompanyController.swift */; };
@@ -29,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C706FB551FB6C8BD004D9C94 /* IntermediateTrainingModels_v1.2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IntermediateTrainingModels_v1.2.xcdatamodel; sourceTree = "<group>"; };
 		C717757A1FAE96D100971552 /* EmployeeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeType.swift; sourceTree = "<group>"; };
 		C71775C01FB3C95C00971552 /* CompaniesAutoUpdateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesAutoUpdateController.swift; sourceTree = "<group>"; };
 		C71775E41FB52E3C00971552 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -45,6 +48,8 @@
 		C72CADE31FA522F1006F2E12 /* EmployeesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesController.swift; sourceTree = "<group>"; };
 		C72CADEE1FA528C6006F2E12 /* UIViewController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Helpers.swift"; sourceTree = "<group>"; };
 		C72CADF01FA529A1006F2E12 /* CreateEmployeeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmployeeController.swift; sourceTree = "<group>"; };
+		C7367AAE1FB6CAFA00A18CAE /* Modelv1.1_2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Modelv1.1_2.xcmappingmodel; sourceTree = "<group>"; };
+		C7367AB01FB6CB8800A18CAE /* CustomMigrationPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMigrationPolicy.swift; sourceTree = "<group>"; };
 		C74388EC1F9E999000EF9F46 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		C78EE8BD1F9C45A400446BDD /* UIColor+theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+theme.swift"; sourceTree = "<group>"; };
 		C7A74D051FB67A3E00C18B19 /* IntermediateTrainingModels_v1.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IntermediateTrainingModels_v1.1.xcdatamodel; sourceTree = "<group>"; };
@@ -94,6 +99,8 @@
 				C74388EC1F9E999000EF9F46 /* Company.swift */,
 				C7F38BA91FA00BCD00089DB4 /* IntermediateTrainingModels.xcdatamodeld */,
 				C7F38BAE1FA0464500089DB4 /* CoreDataManager.swift */,
+				C7367AAE1FB6CAFA00A18CAE /* Modelv1.1_2.xcmappingmodel */,
+				C7367AB01FB6CB8800A18CAE /* CustomMigrationPolicy.swift */,
 			);
 			path = IntermediateTraining;
 			sourceTree = "<group>";
@@ -213,12 +220,14 @@
 				C717757B1FAE96D100971552 /* EmployeeType.swift in Sources */,
 				C72CADF11FA529A1006F2E12 /* CreateEmployeeController.swift in Sources */,
 				C71775E51FB52E3C00971552 /* Service.swift in Sources */,
+				C7367AAF1FB6CAFA00A18CAE /* Modelv1.1_2.xcmappingmodel in Sources */,
 				C72CADE41FA522F1006F2E12 /* EmployeesController.swift in Sources */,
 				C720C0B31F9BE1B3006195A0 /* AppDelegate.swift in Sources */,
 				C71775C11FB3C95C00971552 /* CompaniesAutoUpdateController.swift in Sources */,
 				C7F38BAB1FA00BCD00089DB4 /* IntermediateTrainingModels.xcdatamodeld in Sources */,
 				C7F38BAF1FA0464500089DB4 /* CoreDataManager.swift in Sources */,
 				C74388ED1F9E999000EF9F46 /* Company.swift in Sources */,
+				C7367AB11FB6CB8800A18CAE /* CustomMigrationPolicy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,10 +417,11 @@
 		C7F38BA91FA00BCD00089DB4 /* IntermediateTrainingModels.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				C706FB551FB6C8BD004D9C94 /* IntermediateTrainingModels_v1.2.xcdatamodel */,
 				C7A74D051FB67A3E00C18B19 /* IntermediateTrainingModels_v1.1.xcdatamodel */,
 				C7F38BAA1FA00BCD00089DB4 /* IntermediateTrainingModels.xcdatamodel */,
 			);
-			currentVersion = C7A74D051FB67A3E00C18B19 /* IntermediateTrainingModels_v1.1.xcdatamodel */;
+			currentVersion = C706FB551FB6C8BD004D9C94 /* IntermediateTrainingModels_v1.2.xcdatamodel */;
 			path = IntermediateTrainingModels.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
