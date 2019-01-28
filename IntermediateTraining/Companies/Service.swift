@@ -45,6 +45,9 @@ struct Service {
                     
                     let company = Company(context: privateContext)
                     company.name = jsonCompany.name
+                    // Xcode 10.0 Changes
+                    company.numEmployees = "1"
+                    company.imageData = Data()
                     
                     let dateFormatter = DateFormatter()
                     dateFormatter.dateFormat = "MM/dd/yyyy"

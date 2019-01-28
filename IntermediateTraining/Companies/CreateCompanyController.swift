@@ -71,13 +71,13 @@ class CreateCompanyController: UIViewController, UINavigationControllerDelegate,
         dismiss(animated: true, completion: nil)
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        if let editedImage = info[UIImagePickerControllerEditedImage] as? UIImage {
+        if let editedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             
             companyImageView.image = editedImage
             
-        } else if let originalImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+        } else if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             companyImageView.image = originalImage
         }
         
@@ -143,7 +143,7 @@ class CreateCompanyController: UIViewController, UINavigationControllerDelegate,
         company?.founded = datePicker.date
         
         if let companyImage = companyImageView.image {
-            let imageData = UIImageJPEGRepresentation(companyImage, 0.8)
+            let imageData = companyImage.jpegData(compressionQuality: 0.8)
             company?.imageData = imageData
         }
         
@@ -170,7 +170,7 @@ class CreateCompanyController: UIViewController, UINavigationControllerDelegate,
         company.setValue(datePicker.date, forKey: "founded")
         
         if let companyImage = companyImageView.image {
-            let imageData = UIImageJPEGRepresentation(companyImage, 0.8)
+            let imageData = companyImage.jpegData(compressionQuality: 0.8)
             company.setValue(imageData, forKey: "imageData")
         }
         
